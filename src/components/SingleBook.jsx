@@ -1,20 +1,15 @@
-import { Card, Col, Row } from "react-bootstrap";
-import scifi from "../Data/books/scifi.json";
+import { Card, Col } from "react-bootstrap";
 
-const SingleBook = () => {
-  const firstBook = scifi[0];
-
+const SingleBook = (props) => {
   return (
-    <Row>
-      <Col md={4}>
-        <Card>
-          <Card.Img variant="top" src={firstBook.img} style={{ heigh: "200px", objectFit: "content" }} />
-          <Card.Body>
-            <Card.Title>{firstBook.title} </Card.Title>
-          </Card.Body>
-        </Card>
-      </Col>
-    </Row>
+    <Col md={4}>
+      <Card>
+        <Card.Img variant="top" src={props.book.img} style={{ heigh: "200px", objectFit: "content" }} />
+        <Card.Body>
+          <Card.Title>{props.book.title} </Card.Title>
+        </Card.Body>
+      </Card>
+    </Col>
   );
 };
 export default SingleBook;

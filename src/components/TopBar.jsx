@@ -1,9 +1,9 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 
-const TopBar = ({ prop }) => (
+const TopBar = ({ brand }) => (
   <Navbar bg="light" data-bs-theme="light">
     <Container>
-      <Navbar.Brand href="#home">{prop}</Navbar.Brand>
+      <Navbar.Brand href="#home">{brand}</Navbar.Brand>
       <Nav className="me-auto">
         <Nav.Link href="#">Home</Nav.Link>
         <Nav.Link href="#">About</Nav.Link>

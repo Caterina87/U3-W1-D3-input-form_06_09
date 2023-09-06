@@ -5,17 +5,18 @@ import MyFooter from "./components/MyFooter";
 import Welcome from "./components/Welcome";
 // import AllBooks from "./components/AllBooks";
 import { Container } from "react-bootstrap";
-import SingleBook from "./components/SingleBook";
+// import SingleBook from "./components/SingleBook";
 import BookList from "./components/BookList";
+import fantasy from "./Data/books/fantasy.json";
 
 function App() {
   return (
     <Container>
-      <TopBar prop="React Library" />
+      <TopBar brand="React Library" />
       <Welcome />
       {/* <AllBooks /> */}
-      <SingleBook />
-      <BookList />
+      {/* <SingleBook /> */}
+      <BookList books={fantasy} />
       <MyFooter />
     </Container>
   );
