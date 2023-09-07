@@ -1,5 +1,5 @@
 import { Component } from "react";
-import SingleBook from "./SingleBook";
+import SingleBookClass from "./SingleBookClass";
 import { Col, Form, Row } from "react-bootstrap";
 
 class BookList extends Component {
@@ -27,7 +27,7 @@ class BookList extends Component {
             .filter((b) => b.title.toLowerCase().includes(this.state.searchQuery))
             .map((b) => (
               <Col xs={12} md={3} key={b.asin}>
-                <SingleBook book={b} />
+                <SingleBookClass book={b} />
               </Col>
             ))}
         </Row>

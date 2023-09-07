@@ -9,6 +9,7 @@ class SingleBook extends Component {
   render() {
     return (
       <Card
+        className="border-red"
         onClick={() => this.setState({ selected: !this.state.selected })}
         style={{ border: this.state.selected ? "3px solid red" : "none" }}
       >
